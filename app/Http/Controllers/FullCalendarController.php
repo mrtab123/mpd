@@ -47,7 +47,7 @@ class FullCalendarController extends Controller
 		
 		$attributes = request()->validate([
 
-            'title' => 'required|max:255',
+            'title' => 'required|max:255|string',
             'location' => 'required|max:255',
             'start' => 'required',
             'end' => 'required',
